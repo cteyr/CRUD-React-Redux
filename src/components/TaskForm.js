@@ -40,7 +40,7 @@ function TaskForm () {
 
     useEffect(() => {
         if(params.id) {
-            setTask(tasks.find((task) => task.id == params.id))
+            setTask(tasks.find((task) => task.id === params.id))
         }
     },[params.id, tasks])
 

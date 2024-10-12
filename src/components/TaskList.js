@@ -20,9 +20,9 @@ function TasksList () {
                 </Link>
             </header>
 
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {tasks.map(task => (
-                    <div key={task.id} className="bg-neutral-800 p-4 rounded-md"> 
+                    <div key={task.id} className="bg-neutral-800 p-4 rounded-md min-w-[250px]"> 
                         <header className="flex justify-between">
                             <h3>{task.tittle}</h3>
                             <div className="flex gap-x-2">
